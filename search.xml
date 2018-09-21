@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Android之Activity生命周期]]></title>
+    <url>%2F2018%2F09%2F19%2FAndroid%E4%B9%8BActivity%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%2F</url>
+    <content type="text"><![CDATA[说起Activity的生命周期，想必大家闭着眼都能说出来，onCreate,onStart…..balabala…..接下来我将从以下两个方面详细阐述：正常情况下的生命周期和异常情况下的生命周期，在这两种情况下生命周期略有不同。 正常情况下的生命周期正常情况下的生命周期：就是指在用户参与的情况下，Activity所经过的生命周期的变化；如下图所示： 异常情况下的生命周期]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F09%2F14%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
