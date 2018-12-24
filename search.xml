@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[起航]]></title>
-    <url>%2F2018%2F12%2F24%2F%E8%B5%B7%E8%88%AA%2F</url>
-    <content type="text"><![CDATA[转眼之间说起Activity的生命周期，想必大家闭着眼都能说出来，onCreate,onStart…..balabala…..接下来我将从以下两个方面详细阐述：正常情况下的生命周期和异常情况下的生命周期，在这两种情况下生命周期略有不同。 正常情况下的生命周期正常情况下的生命周期：就是指在用户参与的情况下，Activity所经过的生命周期的变化；如下图所示： onCreate：表示Activity被创建，生命周期中的第一个方法。在这个方法中，可以做一些初始化的操作，例如：调用setContentView加载布局文件、初始化数据等…、 onStart：表示Activity启动，这时Activity已经可见了，但是还没有出现在前台，无法和用户交互。 onResume：表示Activity已经可见了，并且出现在前台，可以和用户交互。注意与onStart区别在于：是否处于前后台。 onPause ：表示Activity正在停止，正常情况下，紧接着onStop会调用。在特殊情况下，如果在快速回到当前Actvity，那么onResume会被调用。但是这种情况属于极端情况，用户很难复现这情况。在这个方法中，可以做一些存储数据、停止动画等操作，但是注意不能太耗时，因为这会影响到新的Activity的显示，onPause先执行完，新Activity的onResume才会执行。 onStop：表示Activity停止，可以做一些稍微重量级的回收操作，不能太耗时。 onDestory：表示Activity销毁，生命周期中的最后一个回调，可以做一些资源回收，释放的操作。 onRestart：表示Activity重新启动，一般情况下，当当前Activity从不可见重新变为可见状态时，onRestart会被调用。例如：用户按Home键切换到桌面或者用户打开了一个新的Activity，这时当前Activity的onPause和onStop就会执行，接着又回到这个Activity，onRestart就会执行。 以上就是生命周期中各个回调方法的介绍，下面对一些具体的情景进行分析： 启动一个Activity后，按back键回调如下：onCreate -&gt; onStart -&gt; onResume -&gt; onPause -&gt; onStop -&gt; onDestroy 启动一个Activity后，按Home键回调如下：onCreate -&gt; onStart -&gt; onResume -&gt; onPause -&gt; onStop 当用户再次回到原Actvity回调如下：onReStart -&gt; onStart -&gt; onResume 启动一个Activity后，弹出对话框或者弹出popwindow回调如下：onCreate -&gt; onStart -&gt; onResume此时onPause和onStop并未调用，不会对当前Activity的生命周期造成影响 异常情况下的生命周期异常情况下的生命周期：是指Activity被系统回收或者由于当前设备的Configuration发生改变，引起Activity被销毁重建，生命周期如下图所示： 系统配置发生改变导致Activity被杀死并重新创建 例如当前Activity处于竖屏状态，如果突然旋转屏幕，由于系统配置发生了改变，在默认情况下，如果Activity不做特殊处理，当系统配置发生改变后，Activity就会被销毁并重新创建，其onPause、onStop、onDestory都会被调用，另外系统还会调用onSaveInstanceState来保存Activity的状态，其生命周期如上图所示。]]></content>
-      <categories>
-        <category>My Life</category>
-      </categories>
-      <tags>
-        <tag>起航</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2018%2F12%2F24%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
