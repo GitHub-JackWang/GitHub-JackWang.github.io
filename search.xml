@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Kotlin之旅-简介]]></title>
-    <url>%2F2018%2F12%2F26%2FKotlin%E4%B9%8B%E6%97%85-%E7%AE%80%E4%BB%8B%2F</url>
+    <url>%2Fundefined%2FKotlin%2F2018-12-26-Kotlin%E4%B9%8B%E6%97%85-%E7%AE%80%E4%BB%8B.html</url>
     <content type="text"><![CDATA[Kotlin是由JetBrains公司开发的一门语言，可以运行在Java虚拟机（JVM）、Android（在2017年5月18日的Google开发者大会上，宣布将Kotlin作为Android开发的官方语言）、浏览器、甚至操作系统上的静态强类型语言，可以编译成JavaScript源码，运行在浏览器上，它与java 100%兼容，甚至具备java不具备的新特性。如果你对java非常熟悉，那么你就会发现Kotlin除了自己的标准库之外，大多仍然使用经典的java集合框架。 Kotlin特性Kotlin具有哪些java中没有的特性呢？ 1.空类型安全，避免空指针异常引起的程序崩溃2.全面支持Lambda表达式（java8支持）3.数据类（data class）4.扩展方法5.智能转换6.字符串模板7.类型推导8.区间表达式9.胜任Java能做的所有事情，使用起来比Java简单，例如没有句末分号 第一行代码所谓千里之行，始于Hello World，使用JetBrains公司开发的Intelij IDEA IDE来写Kotlin代码，别提有多爽啦。在写代码之前需要确认一下Kotlin插件有没有安装到IDEA中，如果没有安装需要安装上在进行下面的操作。 然后，创建一个Kotlin的gradle工程，工程名称自己指定； 与java一样，在src目录下创建一个package，创建一个.kt文件： 123fun main(args: Array&lt;String&gt;) &#123; println("Hello World")&#125; 运行程序代码，结果就会输出“Hello World”，我们可以点击println这个方法，看一下它的源码：12345/** Prints the given message and newline to the standard output stream. */@kotlin.internal.InlineOnlypublic actual inline fun println(message: Any?) &#123; System.out.println(message)&#125; 从源码中可以发现调用的就是java中的方法； 那么，Kotlin的HelloWorld工程就编写完了，同时，我们对Kotlin也有了一个大概的认识，了解了Kotlin的一些特性，而这些特性极大方便了程序开发，具体的这些特性，会在后面详细讲的，还请继续关注我的博客！~~~ 最后，有一些学习Kotlin的参考资料，帮助我们更好的学习Kotlin： 1.官方文档2.Kotlin源码3.Kotlin微博4.Kotlin微信公众号：Kotlin5.Gradle文档]]></content>
       <categories>
         <category>Kotlin</category>
@@ -13,7 +13,7 @@
   </entry>
   <entry>
     <title><![CDATA[起航]]></title>
-    <url>%2F2018%2F12%2F24%2F%E8%B5%B7%E8%88%AA%2F</url>
+    <url>%2Fundefined%2FMy-Life%2F2018-12-24-%E8%B5%B7%E8%88%AA.html</url>
     <content type="text"><![CDATA[转眼之间一年的时间又匆匆流逝，2018年已接近尾声，2019年如期而至。之前很少写博客，也不是说自己的时间有多忙多忙，总是感觉写博客很浪费时间，故一直没有坚持写博客，现在发现写博客能查漏补缺、温故知新、让你对知识理解的更加深刻，还能分享自己的成长过程或许还能帮助到别人，何乐而不为呢。 总之，以后要坚持写博客，坚持学习，为了成为更好的自己，加油！！！]]></content>
       <categories>
         <category>My Life</category>
@@ -24,7 +24,7 @@
   </entry>
   <entry>
     <title><![CDATA[Markdown规范]]></title>
-    <url>%2F2018%2F12%2F23%2FMarkdown%E8%A7%84%E8%8C%83%2F</url>
+    <url>%2Fundefined%2FMarkdown%E6%A0%BC%E5%BC%8F%2F2018-12-23-Markdown%E8%A7%84%E8%8C%83.html</url>
     <content type="text"><![CDATA[欢迎使用Markdown编辑器写博客本Markdown编辑器使用StackEdit修改而来，用它写博客，将会带来全新的体验哦： Markdown和扩展Markdown简洁的语法 代码块高亮 图片链接和图片上传 LaTex数学公式 UML序列图和流程图 离线写博客 导入导出Markdown文件 丰富的快捷键 快捷键 加粗 Ctrl + B 斜体 Ctrl + I 引用 Ctrl + Q 插入链接 Ctrl + L 插入代码 Ctrl + K 插入图片 Ctrl + G 提升标题 Ctrl + H 有序列表 Ctrl + O 无序列表 Ctrl + U 横线 Ctrl + R 撤销 Ctrl + Z 重做 Ctrl + Y Markdown及扩展 Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。 —— [ 维基百科 ] 使用简单的符号标识不同的标题，将某些文字标记为粗体或者斜体，创建一个链接等，详细语法参考帮助？。 本编辑器支持 Markdown Extra , 扩展了很多好用的功能。具体请参考Github. 表格Markdown Extra 表格语法： 项目 价格 Computer $1600 Phone $12 Pipe $1 可以使用冒号来定义对齐方式： 项目 价格 数量 Computer 1600 元 5 Phone 12 元 12 Pipe 1 元 234 ###定义列表 Markdown Extra 定义列表语法：项目１项目２: 定义 A: 定义 B 项目３: 定义 C : 定义 D &gt; 定义D内容 代码块代码块语法遵循标准markdown代码，例如：12345678910@requires_authorizationdef somefunc(param1='', param2=0): '''A docstring''' if param1 &gt; param2: # interesting print 'Greater' return (param2 - param1 + 1) or Noneclass SomeClass: pass&gt;&gt;&gt; message = '''interpreter... prompt''' ###脚注生成一个脚注[^footnote]. [^footnote]: 这里是 脚注 的 内容. 目录用 [TOC]来生成目录： [TOC] 数学公式使用MathJax渲染LaTex 数学公式，详见math.stackexchange.com. 行内公式，数学公式为：$\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$。 块级公式： $$ x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$ 更多LaTex语法请参考 这儿. UML 图:可以渲染序列图： 123张三-&gt;李四: 嘿，小四儿, 写博客了没?Note right of 李四: 李四愣了一下，说：李四--&gt;张三: 忙得吐血，哪有时间写。 或者流程图： 12345678st=&gt;start: 开始e=&gt;end: 结束op=&gt;operation: 我的操作cond=&gt;condition: 确认？st-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op 关于 序列图 语法，参考 这儿, 关于 流程图 语法，参考 这儿. 离线写博客即使用户在没有网络的情况下，也可以通过本编辑器离线写博客（直接在曾经使用过的浏览器中输入write.blog.csdn.net/mdeditor即可。Markdown编辑器使用浏览器离线存储将内容保存在本地。 用户写博客的过程中，内容实时保存在浏览器缓存中，在用户关闭浏览器或者其它异常情况下，内容不会丢失。用户再次打开浏览器时，会显示上次用户正在编辑的没有发表的内容。 博客发表后，本地缓存将被删除。 用户可以选择 把正在写的博客保存到服务器草稿箱，即使换浏览器或者清除缓存，内容也不会丢失。 注意：虽然浏览器存储大部分时候都比较可靠，但为了您的数据安全，在联网后，请务必及时发表或者保存到服务器草稿箱。 ##浏览器兼容 目前，本编辑器对Chrome浏览器支持最为完整。建议大家使用较新版本的Chrome。 IE９以下不支持 IE９，１０，１１存在以下问题 不支持离线功能 IE9不支持文件导入导出 IE10不支持拖拽文件导入]]></content>
       <categories>
         <category>Markdown格式</category>
@@ -35,7 +35,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>%2F2018%2F09%2F19%2Fhello-world%2F</url>
+    <url>%2Fundefined%2FDiary%2F2018-09-19-hello-world.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <categories>
         <category>Diary</category>
