@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Kotlin之旅-数据类型]]></title>
+    <url>%2F2018%2F12%2F28%2FKotlin%E4%B9%8B%E6%97%85-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[上一篇文章中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示： Boolean类型Kotlin中已经不再区分基本类型和装箱类型了，Kotlin中的Boolean类型相当于Java中的基本类型boolean和装箱类型Boolean的合体，在需要的时候编译器会自动进行转化和区分，下面我们定义一个Boolean的变量b： 1val b: Boolean = true Number类型Number类型主要包括浮点型和整型，具体如下表所示： 分类类型位宽字节Byte8浮点型Double64Float32整型Long64Int32Short16 Kotlin中Number类型基本上和Java相应的基本数据类型使用上基本一致： 1.获取最大值与最小值，如：Int.MAX_VALUE、Int.MIN_VALUE（如此类推）2.可以用二进制、十六进制来表示数值，如用0b00000011表示Int型的3，0xFF表示Int型的2553.与Java一样，当类型不明确时，可以加F、L来标识4.当数值不正确的时候，例如打印0/0的时候，就会输出NaN（即Not A Number），NaN没有比较的意义 拆箱与装箱问题：Java中的基本数据类型是可以隐式转换的，如下代码所示：12345public class TestDemo &#123; int aInt = 1; long bLong = aInt;&#125; bLong的值是由aInt通过隐式转换的方式赋值过去的，在Java中这段代码是没有任何问题的。但是在Kotlin中这样写就会报错，原因是Kotlin中不允许隐式转换，必须显式转换；12var aInt:Int = 1var bLong:Long = aInt.toLong() Char类型String类型区间数组]]></content>
+      <categories>
+        <category>Kotlin</category>
+      </categories>
+      <tags>
+        <tag>Kotlin数据类型</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Kotlin之旅-简介]]></title>
     <url>%2F2018%2F12%2F26%2FKotlin%E4%B9%8B%E6%97%85-%E7%AE%80%E4%BB%8B%2F</url>
     <content type="text"><![CDATA[Kotlin是由JetBrains公司开发的一门语言，可以运行在Java虚拟机（JVM）、Android（在2017年5月18日的Google开发者大会上，宣布将Kotlin作为Android开发的官方语言）、浏览器、甚至操作系统上的静态强类型语言，可以编译成JavaScript源码，运行在浏览器上，它与java 100%兼容，甚至具备java不具备的新特性。如果你对java非常熟悉，那么你就会发现Kotlin除了自己的标准库之外，大多仍然使用经典的java集合框架。 Kotlin特性Kotlin具有哪些java中没有的特性呢？ 1.空类型安全，避免空指针异常引起的程序崩溃2.全面支持Lambda表达式（java8支持）3.数据类（data class）4.扩展方法5.智能转换6.字符串模板7.类型推导8.区间表达式9.胜任Java能做的所有事情，使用起来比Java简单，例如没有句末分号 第一行代码所谓千里之行，始于Hello World，使用JetBrains公司开发的Intelij IDEA IDE来写Kotlin代码，别提有多爽啦。在写代码之前需要确认一下Kotlin插件有没有安装到IDEA中，如果没有安装需要安装上在进行下面的操作。 然后，创建一个Kotlin的gradle工程，工程名称自己指定； 与java一样，在src目录下创建一个package，创建一个.kt文件： 123fun main(args: Array&lt;String&gt;) &#123; println("Hello World")&#125; 运行程序代码，结果就会输出“Hello World”，我们可以点击println这个方法，看一下它的源码：12345/** Prints the given message and newline to the standard output stream. */@kotlin.internal.InlineOnlypublic actual inline fun println(message: Any?) &#123; System.out.println(message)&#125; 从源码中可以发现调用的就是java中的方法； 那么，Kotlin的HelloWorld工程就编写完了，同时，我们对Kotlin也有了一个大概的认识，了解了Kotlin的一些特性，而这些特性极大方便了程序开发，具体的这些特性，会在后面详细讲的，还请继续关注我的博客！~~~ 最后，有一些学习Kotlin的参考资料，帮助我们更好的学习Kotlin： 1.官方文档2.Kotlin源码3.Kotlin微博4.Kotlin微信公众号：Kotlin5.Gradle文档]]></content>
