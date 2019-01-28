@@ -98,7 +98,7 @@
 <meta property="og:description" content="上一篇文章中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示：">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://www.virg.top/2018/12/28/Kotlin之旅-数据类型/Kotlin_type.png">
-<meta property="og:updated_time" content="2019-01-11T02:27:59.397Z">
+<meta property="og:updated_time" content="2019-01-17T11:37:39.676Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kotlin之旅-数据类型">
 <meta name="twitter:description" content="上一篇文章中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示：">
@@ -393,7 +393,7 @@
                   <span class="post-meta-item-text">全文共</span>
                 
                 <span title="全文共">
-                  409
+                  610
                 </span>
 				<span class="post-meta-item-text">字</span>
               
@@ -408,7 +408,7 @@
                   <span class="post-meta-item-text">阅读时长 </span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
 				<span class="post-meta-item-text">分钟</span>
               
@@ -440,9 +440,14 @@
 
 <p>Kotlin中Number类型基本上和Java相应的基本数据类型使用上基本一致：</p>
 <p>1.获取最大值与最小值，如：<code>Int.MAX_VALUE</code>、<code>Int.MIN_VALUE</code>（如此类推）<br>2.可以用<code>二进制</code>、<code>十六进制</code>来表示数值，如用0b00000011表示Int型的3，0xFF表示Int型的255<br>3.与Java一样，当类型不明确时，可以加<code>F</code>、<code>L</code>来标识<br>4.当数值不正确的时候，例如打印0/0的时候，就会输出<code>NaN</code>（即Not A Number），NaN没有比较的意义</p>
-<p>拆箱与装箱问题：<br>Java中的基本数据类型是可以隐式转换的，如下代码所示：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> aInt = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">long</span> bLong = aInt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>bLong的值是由aInt通过隐式转换的方式赋值过去的，在Java中这段代码是没有任何问题的。但是在Kotlin中这样写就会报错，原因是Kotlin中不允许隐式转换，必须显式转换；<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var aInt:Int = <span class="number">1</span></span><br><span class="line">var bLong:Long = aInt.toLong()</span><br></pre></td></tr></table></figure></p>
-<h3 id="Char类型"><a href="#Char类型" class="headerlink" title="Char类型"></a>Char类型</h3><h3 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h3><h3 id="区间"><a href="#区间" class="headerlink" title="区间"></a>区间</h3><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3>
+<p>类型转换问题：<br>Java中的基本数据类型是可以<code>隐式转换</code>，如下代码所示：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> aInt = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">long</span> bLong = aInt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>bLong的值是由aInt通过隐式转换的方式赋值过去的，在Java中这段代码是没有任何问题的。但是在Kotlin中这样写就会报错，原因是Kotlin中不允许隐式转换，必须<code>显式转换</code>；<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var aInt:Int = <span class="number">1</span></span><br><span class="line">var bLong:Long = aInt.toLong()</span><br></pre></td></tr></table></figure></p>
+<p>装箱与拆箱问题：<br>1.正如上文所说的，Kotlin中已经不再区分基本数据类型和装箱类型了<br>例如：Kotlin中的Int类型是Java中基本数据类型int和装箱类型Integer的合体，在需要的时候编译器会自动进行转化和区分</p>
+<h3 id="Char类型"><a href="#Char类型" class="headerlink" title="Char类型"></a>Char类型</h3><p>Kotlin中的Char类型对应Java中的Character，大小占<code>2个字节</code>，表示一个16位的Unicode字符，如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    val aChar: Char = <span class="string">'a'</span></span><br><span class="line">    val bChar: Char = <span class="string">'\u0061'</span></span><br><span class="line">    println(<span class="string">"$aChar + $bChar"</span>)<span class="comment">//输出：a + a</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>说到字符不得不说一下转义字符，如下所示：</p>
+<table><tr><td>转义字符</td><td>含义</td></tr><tr><td>\t</td><td>制表符</td></tr><tr><td>\b</td><td>光标后退一个字符</td></tr><tr><td>\n</td><td>回车</td></tr><tr><td>\r</td><td>光标回到行首</td></tr><tr><td>\’</td><td>单引号</td></tr><tr><td>\”</td><td>双引号</td></tr><tr><td>\\</td><td>反斜杠</td></tr><tr><td>\$</td><td>美元符号，Kotlin支持美元符号开头的字符串模板</td></tr></table>
+
+<h3 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h3><h3 id="区间"><a href="#区间" class="headerlink" title="区间"></a>区间</h3><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3>
       
     </div>
     
@@ -629,7 +634,7 @@
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="https://github.com/GitHub-JackWang" target="_blank" title="GitHub">
+                    <a href="https://github.com/VirgCode" target="_blank" title="GitHub">
                       
                         <i class="fa fa-fw fa-github"></i>GitHub</a>
                   </span>
