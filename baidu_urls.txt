@@ -3,4 +3,5 @@ https://www.virg.top/2018/12/26/Kotlin之旅-简介/
 https://www.virg.top/2018/12/24/起航/
 https://www.virg.top/2018/12/23/Markdown规范/
 https://www.virg.top/2018/09/19/hello-world/
+https://www.virg.top/2017/02/10/设计模式之面向对象的七大原则/
 https://www.virg.top/2017/02/03/设计模式之面向对象/
