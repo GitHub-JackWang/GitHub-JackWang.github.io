@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Kotlin之旅-数据类型]]></title>
     <url>%2F2018%2F12%2F28%2FKotlin%E4%B9%8B%E6%97%85-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[上一篇文章中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示： Boolean类型Kotlin中已经不再区分基本类型和装箱类型了，Kotlin中的Boolean类型相当于Java中的基本类型boolean和装箱类型Boolean的合体，在需要的时候编译器会自动进行转化和区分，下面我们定义一个Boolean的变量b： 1val b: Boolean = true Number类型Number类型主要包括浮点型和整型，具体如下表所示： 分类类型位宽字节Byte8浮点型Double64Float32整型Long64Int32Short16 Kotlin中Number类型基本上和Java相应的基本数据类型使用上基本一致： 1.获取最大值与最小值，如：Int.MAX_VALUE、Int.MIN_VALUE（如此类推）2.可以用二进制、十六进制来表示数值，如用0b00000011表示Int型的3，0xFF表示Int型的2553.与Java一样，当类型不明确时，可以加F、L来标识4.当数值不正确的时候，例如打印0/0的时候，就会输出NaN（即Not A Number），NaN没有比较的意义 类型转换问题：Java中的基本数据类型是可以隐式转换，如下代码所示：12345public class TestDemo &#123; int aInt = 1; long bLong = aInt;&#125; bLong的值是由aInt通过隐式转换的方式赋值过去的，在Java中这段代码是没有任何问题的。但是在Kotlin中这样写就会报错，原因是Kotlin中不允许隐式转换，必须显式转换；12var aInt:Int = 1var bLong:Long = aInt.toLong() 装箱与拆箱问题：1.正如上文所说的，Kotlin中已经不再区分基本数据类型和装箱类型了例如：Kotlin中的Int类型是Java中基本数据类型int和装箱类型Integer的合体，在需要的时候编译器会自动进行转化和区分 Char类型Kotlin中的Char类型对应Java中的Character，大小占2个字节，表示一个16位的Unicode字符，如下：12345fun main(args: Array&lt;String&gt;) &#123; val aChar: Char = 'a' val bChar: Char = '\u0061' println("$aChar + $bChar")//输出：a + a&#125; 说到字符不得不说一下转义字符，如下所示： 转义字符含义\t制表符\b光标后退一个字符\n回车\r光标回到行首\’单引号\”双引号\\反斜杠\$美元符号，Kotlin支持美元符号开头的字符串模板 String类型区间数组]]></content>
+    <content type="text"><![CDATA[上一篇文章中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示： Boolean类型布尔用Boolean类型表示，它有两个值：true与false。内置的布尔运算有：|| - 短路逻辑或&amp;&amp; - 短路逻辑与! - 逻辑非注意：Kotlin中已经不再区分基本类型和装箱类型了，Kotlin中的Boolean类型相当于Java中的基本类型boolean和装箱类型Boolean的合体，在需要的时候编译器会自动进行转化和区分， 下面我们定义一个Boolean的变量b：1val b: Boolean = true Number类型Number类型其实就是我们所说的数字，主要包括浮点型和整型，具体如下表所示： 分类类型位宽字节Byte8浮点型Double64Float32整型Long64Int32Short16 Kotlin中Number类型基本上和Java相应的基本数据类型使用上基本一致： 1.获取最大值与最小值，如：Int.MAX_VALUE、Int.MIN_VALUE（如此类推）2.可以用二进制、十六进制来表示数值，如用0b00000011表示Int型的3，0xFF表示Int型的2553.与Java一样，当类型不明确时，可以加F、L来标识4.当数值不正确的时候，例如打印0/0的时候，就会输出NaN（即Not A Number），NaN没有比较的意义 类型转换问题：Java中的基本数据类型是可以隐式转换，如下代码所示：12345public class TestDemo &#123; int aInt = 1; long bLong = aInt;&#125; bLong的值是由aInt通过隐式转换的方式赋值过去的，在Java中这段代码是没有任何问题的。但是在Kotlin中这样写就会报错，原因是Kotlin中不允许隐式转换，必须显式转换；12var aInt:Int = 1var bLong:Long = aInt.toLong() 装箱与拆箱问题：1.正如上文所说的，Kotlin中已经不再区分基本数据类型和装箱类型了例如：Kotlin中的Int类型是Java中基本数据类型int和装箱类型Integer的合体，在需要的时候编译器会自动进行转化和区分 Char类型Kotlin中的Char类型对应Java中的Character，大小占2个字节，表示一个16位的Unicode字符，字符用单引号（&#39;&#39;）引起来，例如：‘a’,’0’,’\n’。如下：12345fun main(args: Array&lt;String&gt;) &#123; val aChar: Char = 'a' val bChar: Char = '\u0061' println("$aChar + $bChar")//输出：a + a&#125; 说到字符不得不说一下转义字符，如下所示： 转义字符含义\t制表符\b光标后退一个字符\n回车\r光标回到行首\’单引号\”双引号\\反斜杠\$美元符号，Kotlin支持美元符号开头的字符串模板 String类型Kotlin中的String类型和Java中的差不多，用双引号（&quot;&quot;）引起来，例子如下：1234567val str: String = "Hello"val fromChars: String = String(charArrayOf('H', 'e', 'l', 'l', 'o'))fun main(args: Array&lt;String&gt;) &#123; println(str == fromChars) // 输出true 和 Java 中的 equals方法是等价的, 比较的是内容 println(str === fromChars) //输出false 比较对象是否相同，比较的是地址&#125; 字符串模板字符串可以包含模板表达式 ，即一些小段代码，会求值并把结果合并到字符串中。 模板表达式以美元符（$）开头，由一个简单的名字构成：12345fun main(args: Array&lt;String&gt;) &#123; val s = "runoob" val str = "$s.length is $&#123;s.length&#125;" // 求值结果为 "runoob.length is 6" println(str)&#125; 如果你需要在原生字符串中表示字面值 $ 字符（它不支持反斜杠转义），你可以用下列语法：123456fun main(args: Array&lt;String&gt;) &#123; val price = """ $&#123;'$'&#125;9.99 """ println(price) // 求值结果为 $9.99&#125; 区间数组]]></content>
       <categories>
         <category>Kotlin</category>
       </categories>
@@ -23,11 +23,11 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[起航]]></title>
+    <title><![CDATA[乘风破浪]]></title>
     <url>%2F2018%2F12%2F24%2F%E8%B5%B7%E8%88%AA%2F</url>
-    <content type="text"><![CDATA[转眼之间一年的时间又匆匆流逝，2018年已接近尾声，2019年如期而至。之前很少写博客，也不是说自己的时间有多忙多忙，总是感觉写博客很浪费时间，故一直没有坚持写博客，现在发现写博客能查漏补缺、温故知新、让你对知识理解的更加深刻，还能分享自己的成长过程或许还能帮助到别人，何乐而不为呢。 总之，以后要坚持写博客，坚持学习，为了成为更好的自己，加油！！！]]></content>
+    <content type="text"><![CDATA[转眼之间一年的时间又匆匆流逝，2018年已接近尾声，2019年如期而至，感觉时间其实过的挺快的，再过几年就是而立之年。之前是在CSDN上写博客，当时博文写的也比较少一些，现在决定在这里记录一下自己的知识和感悟吧，如果能够帮助到其他的人那就更好了~~ 行百里者半九十，希望自己能够一直坚持下去写博客。“人最宝贵的东西是生命，生命每个人只有一次，人的一生应当这样度过：当他回忆往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞愧”，这是《钢铁是怎样炼成的》一书中的名言，是值得我们深思和用一生来践行的。Life is Short, Make it Count… 总之，以后要坚持写博客，坚持学习，为了成为更好的自己，加油！！！]]></content>
       <categories>
-        <category>My Life</category>
+        <category>随笔感悟</category>
       </categories>
       <tags>
         <tag>起航</tag>
