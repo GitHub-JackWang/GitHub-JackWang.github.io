@@ -1,7 +1,8 @@
-https://www.virg.top/2018/12/28/Kotlin之旅-数据类型/
-https://www.virg.top/2018/12/26/Kotlin之旅-简介/
-https://www.virg.top/2018/12/24/起航/
-https://www.virg.top/2018/12/23/Markdown规范/
-https://www.virg.top/2018/09/19/hello-world/
-https://www.virg.top/2017/02/10/设计模式之面向对象的七大原则/
-https://www.virg.top/2017/02/03/设计模式之面向对象/
+https://www.virg.top/2019/02/10/设计模式之面向对象的七大原则/
+https://www.virg.top/2019/02/01/设计模式之面向对象/
+https://www.virg.top/2018/02/03/Kotlin之旅-数据类型/
+https://www.virg.top/2018/01/28/Kotlin之旅-基础语法/
+https://www.virg.top/2018/01/20/Kotlin之旅-简介/
+https://www.virg.top/2018/01/12/Markdown规范/
+https://www.virg.top/2018/01/06/起航/
+https://www.virg.top/2018/01/01/hello-world/

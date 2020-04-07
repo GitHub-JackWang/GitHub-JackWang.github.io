@@ -78,7 +78,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Kotlin数据类型," />
 
 
 
@@ -89,13 +89,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Virg&#39;s Notes">
-<meta property="og:url" content="https://www.virg.top/index.html">
+<meta name="description" content="上一篇文章中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示：">
+<meta name="keywords" content="Kotlin数据类型">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kotlin之旅-数据类型">
+<meta property="og:url" content="https://www.virg.top/2018/02/03/Kotlin之旅-数据类型/index.html">
 <meta property="og:site_name" content="Virg&#39;s Notes">
+<meta property="og:description" content="上一篇文章中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示：">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://www.virg.top/2018/02/03/Kotlin之旅-数据类型/Kotlin_type.png">
+<meta property="og:image" content="https://www.virg.top/2018/02/03/Kotlin之旅-数据类型/array_type.png">
+<meta property="og:updated_time" content="2020-04-07T06:37:54.465Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Virg&#39;s Notes">
+<meta name="twitter:title" content="Kotlin之旅-数据类型">
+<meta name="twitter:description" content="上一篇文章中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示：">
+<meta name="twitter:image" content="https://www.virg.top/2018/02/03/Kotlin之旅-数据类型/Kotlin_type.png">
 
 
 
@@ -125,13 +133,13 @@
 
 
 
-  <link rel="canonical" href="https://www.virg.top/"/>
+  <link rel="canonical" href="https://www.virg.top/2018/02/03/Kotlin之旅-数据类型/"/>
 
 
 
 
 
-  <title>Virg's Notes</title>
+  <title>Kotlin之旅-数据类型 | Virg's Notes</title>
   
 
 
@@ -151,8 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -279,201 +286,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-    
-      
-        
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.virg.top/2019/02/01/设计模式之面向对象/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Virg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/blog-logo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Virg's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/01/设计模式之面向对象/" itemprop="url">设计模式之面向对象</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-01T18:59:54+08:00">
-                2019-02-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/设计模式/" itemprop="url" rel="index">
-                    <span itemprop="name">设计模式</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/02/01/设计模式之面向对象/#comments" itemprop="discussionUrl">
-				<span class="post-meta-item-text">评论数</span>
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/01/设计模式之面向对象/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-          
-              
-                
-				
-                
-				  <span class="post-meta-divider">|</span>
-                  <span class="post-meta-item-text">全文共</span>
-                
-                <span title="全文共">
-                  2.4k
-                </span>
-				<span class="post-meta-item-text">字</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-				
-                
-                  <span class="post-meta-item-text">阅读时长 </span>
-                
-                <span title="阅读时长">
-                  9
-                </span>
-				<span class="post-meta-item-text">分钟</span>
-              
-          
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>设计模式（Design Pattern）是一套被反复使用、多数人知晓的、经过分类的、代码设计经验的总结。<br>使用设计模式的目的：为了代码可重用性、让代码更容易被他人理解、保证代码可靠性。 设计模式使代码编写真正工程化；设计模式是软件工程的基石脉络，如同大厦的结构一样。通俗点说就是软件开发人员在软件开发过程中面临的一般问题的解决方案，这些解决方案是众多软件开发人员经过相当长的一段时间的试验和错误总结出来的。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/02/01/设计模式之面向对象/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-      
-    
-      
-        
 
   
 
@@ -503,9 +318,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/03/Kotlin之旅-数据类型/" itemprop="url">Kotlin之旅-数据类型</a></h1>
+          <h1 class="post-title" itemprop="name headline">Kotlin之旅-数据类型</h1>
         
 
         <div class="post-meta">
@@ -618,17 +431,43 @@
       
 
       
-        
-          <p><a href="/2018/01/28/Kotlin之旅-基础语法">上一篇文章</a>中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示：</p>
+        <p><a href="/2018/01/28/Kotlin之旅-基础语法">上一篇文章</a>中，我们对Kotlin有了一个初步的认识，并且写了第一个Kotlin程序，那么，这篇文章说一下Kotlin的数据类型，如下图所示：</p>
 <img src="/2018/02/03/Kotlin之旅-数据类型/Kotlin_type.png">
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/02/03/Kotlin之旅-数据类型/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+<a id="more"></a>
+<h4 id="Boolean类型"><a href="#Boolean类型" class="headerlink" title="Boolean类型"></a>Boolean类型</h4><p>布尔用Boolean类型表示，它有两个值：<code>true</code>与<code>false</code>。<br>内置的布尔运算有：<br><code>||</code> - 短路逻辑或<br><code>&amp;&amp;</code> - 短路逻辑与<br><code>!</code> - 逻辑非</p>
+<blockquote>
+<p><strong>注意：</strong>Kotlin中已经不再区分基本类型和装箱类型了，Kotlin中的Boolean类型相当于Java中的基本类型boolean和装箱类型Boolean的合体，在需要的时候编译器会自动进行转化和区分，</p>
+</blockquote>
+<p>下面我们定义一个Boolean的变量b：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">val b: Boolean = <span class="keyword">true</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="Number类型"><a href="#Number类型" class="headerlink" title="Number类型"></a>Number类型</h4><p>Number类型其实就是我们所说的数字，主要包括<code>浮点型</code>和<code>整型</code>，具体如下表所示：</p>
+<table><tr><td>分类</td><td>类型</td><td>位宽</td></tr><tr><td>字节</td><td>Byte</td><td>8</td></tr><tr><td rowspan="2">浮点型</td><td>Double</td><td>64</td></tr><tr><td>Float</td><td>32</td></tr><tr><td rowspan="3">整型</td><td>Long</td><td>64</td></tr><tr><td>Int</td><td>32</td></tr><tr><td>Short</td><td>16</td></tr></table>
+
+<p>Kotlin中Number类型基本上和Java相应的基本数据类型使用上基本一致：</p>
+<p>1.获取最大值与最小值，如：<code>Int.MAX_VALUE</code>、<code>Int.MIN_VALUE</code>（如此类推）<br>2.可以用<code>二进制</code>、<code>十六进制</code>来表示数值，如用0b00000011表示Int型的3，0xFF表示Int型的255<br>3.与Java一样，当类型不明确时，可以加<code>F</code>、<code>L</code>来标识<br>4.当数值不正确的时候，例如打印0/0的时候，就会输出<code>NaN</code>（即Not A Number），NaN没有比较的意义</p>
+<p>不过Kotlin中支持下划线使数字常量更易读：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">val oneMillion = <span class="number">1_000_000</span></span><br><span class="line">val creditCardNumber = <span class="number">1234_5678_9012_3456L</span></span><br><span class="line">val socialSecurityNumber = <span class="number">999_99_9999L</span></span><br><span class="line">val hexBytes = <span class="number">0xFF_EC_DE_5E</span></span><br><span class="line">val bytes = <span class="number">0b11010010_01101001_10010100_10010010</span></span><br></pre></td></tr></table></figure></p>
+<p>比较两个数字:<br>Kotlin 中没有基础数据类型，只有封装的数字类型，你每定义的一个变量，其实 Kotlin 帮你封装了一个对象，这样可以保证不会出现空指针。数字类型也一样，所以在比较两个数字的时候，就有比较数据大小和比较两个对象是否相同的区别了。<br>在 Kotlin 中，三个等号 === 表示比较对象地址，两个 == 表示比较两个值大小。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    val a: Int = <span class="number">10000</span></span><br><span class="line">    println(a === a) <span class="comment">// true，值相等，对象地址相等</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//经过了装箱，创建了两个不同的对象</span></span><br><span class="line">    val boxedA: Int? = a</span><br><span class="line">    val anotherBoxedA: Int? = a</span><br><span class="line"></span><br><span class="line">    <span class="comment">//虽然经过了装箱，但是值是相等的，都是10000</span></span><br><span class="line">    println(boxedA === anotherBoxedA) <span class="comment">//  false，值相等，对象地址不一样</span></span><br><span class="line">    println(boxedA == anotherBoxedA) <span class="comment">// true，值相等</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>类型转换问题：<br>Java中的基本数据类型是可以<code>隐式转换</code>，如下代码所示：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestDemo</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">int</span> aInt = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">long</span> bLong = aInt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>bLong的值是由aInt通过隐式转换的方式赋值过去的，在Java中这段代码是没有任何问题的。但是在Kotlin中这样写就会报错，原因是Kotlin中不允许隐式转换，必须<code>显式转换</code>；<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var aInt:Int = <span class="number">1</span></span><br><span class="line">var bLong:Long = aInt.toLong()</span><br></pre></td></tr></table></figure></p>
+<p>装箱与拆箱问题：<br>1.正如上文所说的，Kotlin中已经不再区分基本数据类型和装箱类型了<br>例如：Kotlin中的Int类型是Java中基本数据类型int和装箱类型Integer的合体，在需要的时候编译器会自动进行转化和区分</p>
+<p>位操作符<br>对于Int和Long类型，还有一系列的位操作符可以使用，分别是：</p>
+<table><tr><td>位操作符</td><td>含义</td></tr><tr><td>shl(bits)</td><td>有符号左移（相当于Java中的&lt;&lt;）</td></tr><tr><td>shr(bits)</td><td>有符号右移（相当于Java中的&gt;&gt;）</td></tr><tr><td>ushr(bits)</td><td>无符号右移</td></tr><tr><td>and(bits)</td><td>位与</td></tr><tr><td>or(bits)</td><td>位或</td></tr><tr><td>xor(bits)</td><td>位异或</td></tr><tr><td>inv()</td><td>位非</td></tr></table>
+
+<h4 id="Char类型"><a href="#Char类型" class="headerlink" title="Char类型"></a>Char类型</h4><p>Kotlin中的Char类型对应Java中的Character，大小占<code>2个字节</code>，表示一个16位的Unicode字符，字符用<code>单引号（&#39;&#39;）</code>引起来，例如：‘a’,’0’,’\n’。如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    val aChar: Char = <span class="string">'a'</span></span><br><span class="line">    val bChar: Char = <span class="string">'\u0061'</span></span><br><span class="line">    println(<span class="string">"$aChar + $bChar"</span>)<span class="comment">//输出：a + a</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>说到字符不得不说一下转义字符，如下所示：</p>
+<table><tr><td>转义字符</td><td>含义</td></tr><tr><td>\t</td><td>制表符</td></tr><tr><td>\b</td><td>光标后退一个字符</td></tr><tr><td>\n</td><td>回车</td></tr><tr><td>\r</td><td>光标回到行首</td></tr><tr><td>\’</td><td>单引号</td></tr><tr><td>\”</td><td>双引号</td></tr><tr><td>\\</td><td>反斜杠</td></tr><tr><td>\$</td><td>美元符号，Kotlin支持美元符号开头的字符串模板</td></tr></table>
+
+<p>最后，我们在看一个显式把字符转换为 Int 数字的例子：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">decimalDigitValue</span><span class="params">(c: Char)</span>: Int </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (c !in <span class="string">'0'</span>..<span class="string">'9'</span>)</span><br><span class="line">        <span class="keyword">throw</span> IllegalArgumentException(<span class="string">"Out of range"</span>)</span><br><span class="line">    <span class="keyword">return</span> c.toInt() - <span class="string">'0'</span>.toInt() <span class="comment">// 显式转换为数字</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="String类型"><a href="#String类型" class="headerlink" title="String类型"></a>String类型</h4><p>Kotlin中的String类型和Java中的差不多，用<code>双引号（&quot;&quot;）</code>引起来，例子如下：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">val str: String = <span class="string">"Hello"</span></span><br><span class="line">val fromChars: String = String(charArrayOf(<span class="string">'H'</span>, <span class="string">'e'</span>, <span class="string">'l'</span>, <span class="string">'l'</span>, <span class="string">'o'</span>))</span><br><span class="line"></span><br><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    println(str == fromChars) <span class="comment">// 输出true  和 Java 中的 equals方法是等价的, 比较的是内容</span></span><br><span class="line">    println(str === fromChars) <span class="comment">//输出false 比较对象是否相同，比较的是地址</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>字符串模板<br>字符串可以包含模板表达式 ，即一些小段代码，会求值并把结果合并到字符串中。 模板表达式以<code>美元符（$）</code>开头，由一个简单的名字构成：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    val s = <span class="string">"runoob"</span></span><br><span class="line">    val str = <span class="string">"$s.length is $&#123;s.length&#125;"</span> <span class="comment">// 求值结果为 "runoob.length is 6"</span></span><br><span class="line">    println(str)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Kotlin 支持<code>三个引号（&quot;&quot;&quot;）</code>扩起来的字符串，支持多行字符串，使用<code>三个引号（&quot;&quot;&quot;）</code>分界符括起来，内部没有转义并且可以包含换行以及任何其他字符，比如：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    val text = <span class="string">""</span><span class="string">"</span></span><br><span class="line"><span class="string">    多行字符串</span></span><br><span class="line"><span class="string">    多行字符串</span></span><br><span class="line"><span class="string">    "</span><span class="string">""</span></span><br><span class="line">    println(text)   <span class="comment">// 输出有一些前置空格</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>还可以通过<code>trimMargin()</code> 方法来删除多余的空白，<code>默认 | 用作边界前缀</code>，但你可以选择其他字符并作为参数传入，比如 trimMargin(“&gt;”)<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    val text = <span class="string">""</span><span class="string">"</span></span><br><span class="line"><span class="string">    |多行字符串</span></span><br><span class="line"><span class="string">    |多行字符串</span></span><br><span class="line"><span class="string">    |多行字符串</span></span><br><span class="line"><span class="string">    |Runoob</span></span><br><span class="line"><span class="string">    "</span><span class="string">""</span>.trimMargin()</span><br><span class="line">    println(text)    <span class="comment">// 前置空格删除了</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>原始字符串与转义字符串内部都支持模板。如果你需要在原生字符串中表示字面值 $ 字符（它不支持反斜杠转义），你可以用下列语法：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    val price = <span class="string">""</span><span class="string">"</span></span><br><span class="line"><span class="string">    $&#123;'$'&#125;9.99</span></span><br><span class="line"><span class="string">    "</span><span class="string">""</span></span><br><span class="line">    println(price)  <span class="comment">// 求值结果为 $9.99</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h4><p>数组使用<code>Array</code>表示，并且还有一个 size 属性及 get 和 set 方法，由于使用 [] 重载了 get 和 set 方法，所以我们可以通过下标很方便的获取或者设置数组对应位置的值。</p>
+<p>创建数组的两种方式：方式一：使用函数arrayOf(); 方式二：使用工厂函数，如下所示：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//[1,2,3]</span></span><br><span class="line">    val a = arrayOf(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)</span><br><span class="line">    <span class="comment">//[0,2,4]</span></span><br><span class="line">    val b = Array(<span class="number">3</span>, &#123; i -&gt; (i * <span class="number">2</span>) &#125;)</span><br><span class="line"></span><br><span class="line">    <span class="comment">//读取数组内容</span></span><br><span class="line">    println(a[<span class="number">0</span>])    <span class="comment">// 输出结果：1</span></span><br><span class="line">    println(b[<span class="number">1</span>])    <span class="comment">// 输出结果：2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>除了Array类，还有一套定制的Array，<code>ByteArray</code>, <code>ShortArray</code>, <code>IntArray</code>等，用来表示各个类型的数组，<code>省去了装箱操作，因此效率更高</code>，其用法同Array一样：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">val intArrayOf: IntArray = intArrayOf(<span class="number">1</span>, <span class="number">2</span>, <span class="number">4</span>)</span><br><span class="line">val charArray: CharArray = charArrayOf(<span class="string">'H'</span>, <span class="string">'e'</span>, <span class="string">'l'</span>, <span class="string">'l'</span>, <span class="string">'o'</span>)</span><br></pre></td></tr></table></figure></p>
+<img src="/2018/02/03/Kotlin之旅-数据类型/array_type.png">
+<p>其他API：<br><code>joinToString()</code>：为集合元素添加分隔符，组成一个新的字符串并返回<br><code>slice()</code>：数组切片，返回一个列表，其中包含位于指定索引范围内的索引处的元素<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    val charArray: CharArray = charArrayOf(<span class="string">'H'</span>, <span class="string">'e'</span>, <span class="string">'l'</span>, <span class="string">'l'</span>, <span class="string">'o'</span>)</span><br><span class="line">    println(charArray.joinToString(<span class="string">""</span>)) <span class="comment">//输出 Hello</span></span><br><span class="line">    println(charArray.slice(<span class="number">1</span> until <span class="number">3</span>)) <span class="comment">//输出 [e, l]</span></span><br><span class="line">    println(charArray.slice(<span class="number">1</span>..<span class="number">3</span>)) <span class="comment">//输出 [e, l, l]</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
     
@@ -638,397 +477,74 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>免费分享，随意打赏 ^ ^</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="Virg 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="Virg 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
 
     
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-      
-    
-      
-        
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.virg.top/2018/01/28/Kotlin之旅-基础语法/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Virg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/blog-logo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Virg's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/28/Kotlin之旅-基础语法/" itemprop="url">Kotlin之旅-基础语法</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-28T10:18:45+08:00">
-                2018-01-28
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Kotlin/" itemprop="url" rel="index">
-                    <span itemprop="name">Kotlin</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/Kotlin数据类型/" rel="tag"># Kotlin数据类型</a>
           
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/28/Kotlin之旅-基础语法/#comments" itemprop="discussionUrl">
-				<span class="post-meta-item-text">评论数</span>
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/01/28/Kotlin之旅-基础语法/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-          
-              
-                
-				
-                
-				  <span class="post-meta-divider">|</span>
-                  <span class="post-meta-item-text">全文共</span>
-                
-                <span title="全文共">
-                  198
-                </span>
-				<span class="post-meta-item-text">字</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-				
-                
-                  <span class="post-meta-item-text">阅读时长 </span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-				<span class="post-meta-item-text">分钟</span>
-              
-          
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p><a href="/2018/01/20/Kotlin之旅-简介">上一篇文章</a>中，我们已经知道了如何创建一个Kotlin项目，那么，这篇文章说一下Kotlin的基础语法，Kotlin的语法还是和Java有些区别的，采用和Java语法对比着来记忆，会更加容易理解和记忆Kotlin语法。<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/28/Kotlin之旅-基础语法/" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/28/Kotlin之旅-基础语法/" rel="next" title="Kotlin之旅-基础语法">
+                <i class="fa fa-chevron-left"></i> Kotlin之旅-基础语法
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-      
-    
-      
-        
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.virg.top/2018/01/20/Kotlin之旅-简介/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Virg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/blog-logo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Virg's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/20/Kotlin之旅-简介/" itemprop="url">Kotlin之旅-简介</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-20T10:18:45+08:00">
-                2018-01-20
-              </time>
+              <a href="/2019/02/01/设计模式之面向对象/" rel="prev" title="设计模式之面向对象">
+                设计模式之面向对象 <i class="fa fa-chevron-right"></i>
+              </a>
             
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Kotlin/" itemprop="url" rel="index">
-                    <span itemprop="name">Kotlin</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/20/Kotlin之旅-简介/#comments" itemprop="discussionUrl">
-				<span class="post-meta-item-text">评论数</span>
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/01/20/Kotlin之旅-简介/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-          
-              
-                
-				
-                
-				  <span class="post-meta-divider">|</span>
-                  <span class="post-meta-item-text">全文共</span>
-                
-                <span title="全文共">
-                  569
-                </span>
-				<span class="post-meta-item-text">字</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-				
-                
-                  <span class="post-meta-item-text">阅读时长 </span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-				<span class="post-meta-item-text">分钟</span>
-              
-          
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>Kotlin是由JetBrains公司开发的一门语言，可以运行在Java虚拟机（JVM）、Android（在2017年5月18日的Google开发者大会上，宣布将Kotlin作为Android开发的官方语言）、浏览器、甚至操作系统上的静态强类型语言，可以编译成JavaScript源码，运行在浏览器上，它与java 100%兼容，甚至具备java不具备的新特性。如果你对java非常熟悉，那么你就会发现Kotlin除了自己的标准库之外，大多仍然使用经典的java集合框架。</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/20/Kotlin之旅-简介/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -1038,399 +554,25 @@
   </article>
 
 
-      
-    
-      
-        
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.virg.top/2018/01/12/Markdown规范/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Virg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/blog-logo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Virg's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/12/Markdown规范/" itemprop="url">Markdown规范</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-12T18:59:54+08:00">
-                2018-01-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Markdown格式/" itemprop="url" rel="index">
-                    <span itemprop="name">Markdown格式</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/12/Markdown规范/#comments" itemprop="discussionUrl">
-				<span class="post-meta-item-text">评论数</span>
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/01/12/Markdown规范/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-          
-              
-                
-				
-                
-				  <span class="post-meta-divider">|</span>
-                  <span class="post-meta-item-text">全文共</span>
-                
-                <span title="全文共">
-                  939
-                </span>
-				<span class="post-meta-item-text">字</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-				
-                
-                  <span class="post-meta-item-text">阅读时长 </span>
-                
-                <span title="阅读时长">
-                  3
-                </span>
-				<span class="post-meta-item-text">分钟</span>
-              
-          
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>记录一下，Markdown的语法格式<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/12/Markdown规范/" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
 
 
-      
-    
-      
-        
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.virg.top/2018/01/06/起航/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Virg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/blog-logo.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Virg's Notes">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/06/起航/" itemprop="url">乘风破浪</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-06T18:59:54+08:00">
-                2018-01-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/随笔感悟/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔感悟</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/01/06/起航/#comments" itemprop="discussionUrl">
-				<span class="post-meta-item-text">评论数</span>
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/01/06/起航/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-          
-              
-                
-				
-                
-				  <span class="post-meta-divider">|</span>
-                  <span class="post-meta-item-text">全文共</span>
-                
-                <span title="全文共">
-                  251
-                </span>
-				<span class="post-meta-item-text">字</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-				
-                
-                  <span class="post-meta-item-text">阅读时长 </span>
-                
-                <span title="阅读时长">
-                  1
-                </span>
-				<span class="post-meta-item-text">分钟</span>
-              
-          
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>转眼之间一年的时间又匆匆流逝，2017年已接近尾声，2018年如期而至，感觉时间其实过的挺快的，再过几年就是而立之年。之前是在CSDN上写博客，当时博文写的也比较少一些，现在决定在这里记录一下自己的知识和感悟吧，如果能够帮助到其他的人那就更好了~~</p>
-<p>行百里者半九十，希望自己能够一直坚持下去写博客。“人最宝贵的东西是生命，生命每个人只有一次，人的一生应当这样度过：当他回忆往事的时候，他不会因为虚度年华而悔恨，也不会因为碌碌无为而羞愧”，这是《钢铁是怎样炼成的》一书中的名言，是值得我们深思和用一生来践行的。Life is Short, Make it Count…</p>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/01/06/起航/" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-          <!--/noindex-->
-        
-      
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-      
-    
-      
-    
-  </section>
-
   
 
 
-          </div>
-          
-
-
-          
 
         </div>
         
@@ -1451,8 +593,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1544,6 +695,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#Boolean类型"><span class="nav-number">1.</span> <span class="nav-text">Boolean类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Number类型"><span class="nav-number">2.</span> <span class="nav-text">Number类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Char类型"><span class="nav-number">3.</span> <span class="nav-text">Char类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#String类型"><span class="nav-number">4.</span> <span class="nav-text">String类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组"><span class="nav-number">5.</span> <span class="nav-text">数组</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1680,6 +847,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
