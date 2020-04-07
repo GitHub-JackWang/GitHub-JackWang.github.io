@@ -1945,7 +1945,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ee7ff5;
+  background: #ff2029;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2773,7 +2773,7 @@ hr {
   display: none;
 }
 .site-meta .site-title {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bolder;
 }
 @media (max-width: 767px) {
@@ -2889,7 +2889,7 @@ hr {
   display: none;
 }
 .posts-expand .post {
-  margin-top: 120px;
+  margin-top: 60px;
 }
 .posts-expand .post:first-child {
   margin-top: 0;
