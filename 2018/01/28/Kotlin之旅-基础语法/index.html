@@ -97,7 +97,7 @@
 <meta property="og:site_name" content="Virg&#39;s Notes">
 <meta property="og:description" content="上一篇文章中，我们已经知道了如何创建一个Kotlin项目，那么，这篇文章说一下Kotlin的基础语法，Kotlin的语法还是和Java有些区别的，采用和Java语法对比着来记忆，会更加容易理解和记忆Kotlin语法。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-04-07T06:45:41.408Z">
+<meta property="og:updated_time" content="2020-04-07T10:45:37.541Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kotlin之旅-基础语法">
 <meta name="twitter:description" content="上一篇文章中，我们已经知道了如何创建一个Kotlin项目，那么，这篇文章说一下Kotlin的基础语法，Kotlin的语法还是和Java有些区别的，采用和Java语法对比着来记忆，会更加容易理解和记忆Kotlin语法。">
@@ -146,6 +146,10 @@
 
 
 
+  
+  
+    <script type="text/javascript"
+            color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   
 </head>
 
@@ -391,7 +395,7 @@
                   <span class="post-meta-item-text">全文共</span>
                 
                 <span title="全文共">
-                  198
+                  655
                 </span>
 				<span class="post-meta-item-text">字</span>
               
@@ -406,7 +410,7 @@
                   <span class="post-meta-item-text">阅读时长 </span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
 				<span class="post-meta-item-text">分钟</span>
               
@@ -432,6 +436,19 @@
 <h4 id="包"><a href="#包" class="headerlink" title="包"></a>包</h4><p>和Java一样，源文件通常以包声明开头：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> org.example</span><br><span class="line"></span><br><span class="line"><span class="function">fun <span class="title">printMessage</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Message</span> </span>&#123;&#125;</span><br></pre></td></tr></table></figure></p>
 <p>源文件所有内容（无论是类还是函数）都包含在声明的包内。<code>printMessage()</code>的全名是 <code>org.example.printMessage</code>， 而 <code>Message</code> 的全名是 <code>org.example.Message</code>。<br>如果没有指明包，该文件的内容属于无名字的默认包。</p>
 <h4 id="默认导入"><a href="#默认导入" class="headerlink" title="默认导入"></a>默认导入</h4><p>有多个包会默认导入到每个 Kotlin 文件中：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">kotlin.*</span><br><span class="line">kotlin.annotation.*</span><br><span class="line">kotlin.collections.*</span><br><span class="line">kotlin.comparisons.*</span><br><span class="line">kotlin.io.*</span><br><span class="line">kotlin.ranges.*</span><br><span class="line">kotlin.sequences.*</span><br><span class="line">kotlin.text.*</span><br></pre></td></tr></table></figure></p>
+<p>根据目标平台还会导入额外的包：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-JVM：</span><br><span class="line">java.lang.*</span><br><span class="line">kotlin.jvm.*</span><br><span class="line">-JS:</span><br><span class="line">kotlin.js.*</span><br></pre></td></tr></table></figure></p>
+<h4 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h4><p>可以导入一个单独的名字：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.example.Message <span class="comment">// 现在 Message 可以不用限定符访问</span></span><br></pre></td></tr></table></figure></p>
+<p>也可以导入一个作用域下的所有内容（包、类、对象等）:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.example.* <span class="comment">// “org.example”中的一切都可访问</span></span><br></pre></td></tr></table></figure></p>
+<p>如果出现名字冲突，可以使用 as 关键字在本地重命名冲突项来消歧义：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.example.Message <span class="comment">// Message 可访问</span></span><br><span class="line"><span class="keyword">import</span> org.test.Message as testMessage <span class="comment">// testMessage 代表“org.test.Message”</span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p><strong>注意：</strong>关键字<code>import</code>并不局限于导入类，也可以导入其他声明：<br>顶层函数及属性；<br>在对象声明中声明的函数和属性；<br>枚举常量；</p>
+</blockquote>
+<h4 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h4><p>函数声明使用<code>关键字fun</code>，函数参数使用 Pascal 表示法定义，即 <code>name: type</code>，参数用逗号隔开，每个参数必须有显式类型。</p>
+<p>有返回值的函数：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">sum</span><span class="params">(aInt: Int, bInt: Int)</span>: Int </span>&#123; <span class="comment">// Int 参数，返回值 Int</span></span><br><span class="line">    <span class="keyword">return</span> aInt + bInt</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>单表达式函数：当函数返回单个表达式时，可以省略花括号并且在 = 符号之后指定代码体即可；<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">sum</span><span class="params">(aInt: Int, bInt: Int)</span>: Int </span>= aInt + bInt</span><br></pre></td></tr></table></figure></p>
+<p>当返回值类型可由编译器推断时，显式声明返回类型是可以省略的：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">sum</span><span class="params">(aInt: Int, bInt: Int)</span> </span>= aInt + bInt</span><br></pre></td></tr></table></figure></p>
+<p>没有返回值的函数（类似于Java中的void函数）：<br>kotlin中如果一个函数不返回任何有用的值，它的返回类型是<code>Unit</code>，类似于Java中的<code>void</code>，同样<code>Unit</code>返回类型是可以省略的<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">printHello</span><span class="params">(name: String?)</span>: Unit </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (name != <span class="keyword">null</span>)</span><br><span class="line">       println(<span class="string">"Hello $name"</span>)</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">       println(<span class="string">"Hi there!"</span>)</span><br><span class="line">    <span class="comment">// `return Unit` 或者 `return` 是可选的</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><code>Unit</code>返回类型是可以省略的<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">printHello</span><span class="params">(name: String?)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (name != <span class="keyword">null</span>)</span><br><span class="line">       println(<span class="string">"Hello $name"</span>)</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">       println(<span class="string">"Hi there!"</span>)</span><br><span class="line">    <span class="comment">// `return Unit` 或者 `return` 是可选的</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -670,7 +687,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#包"><span class="nav-number">1.</span> <span class="nav-text">包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#默认导入"><span class="nav-number">2.</span> <span class="nav-text">默认导入</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#包"><span class="nav-number">1.</span> <span class="nav-text">包</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#默认导入"><span class="nav-number">2.</span> <span class="nav-text">默认导入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#导入"><span class="nav-number">3.</span> <span class="nav-text">导入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数"><span class="nav-number">4.</span> <span class="nav-text">函数</span></a></li></ol></div>
             
 
           </div>
