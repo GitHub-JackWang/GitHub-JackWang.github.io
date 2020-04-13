@@ -99,7 +99,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://www.virg.top/2018/01/20/Kotlin之旅-简介/kotlin_plugin.png">
 <meta property="og:image" content="https://www.virg.top/2018/01/20/Kotlin之旅-简介/kotlin_create_project.png">
-<meta property="og:updated_time" content="2020-04-07T06:35:00.289Z">
+<meta property="og:updated_time" content="2020-04-13T03:21:44.948Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kotlin之旅-简介">
 <meta name="twitter:description" content="Kotlin是由JetBrains公司开发的一门语言，可以运行在Java虚拟机（JVM）、Android（在2017年5月18日的Google开发者大会上，宣布将Kotlin作为Android开发的官方语言）、浏览器、甚至操作系统上的静态强类型语言，可以编译成JavaScript源码，运行在浏览器上，它与java 100%兼容，甚至具备java不具备的新特性。如果你对java非常熟悉，那么你就会发">
@@ -149,10 +149,6 @@
 
 
 
-  
-  
-    <script type="text/javascript"
-            color="0,0,255" opacity='0.7' zIndex="-2" count="99" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   
 </head>
 
@@ -444,8 +440,8 @@
 <p>然后，创建一个Kotlin的gradle工程，工程名称自己指定；</p>
 <img src="/2018/01/20/Kotlin之旅-简介/kotlin_create_project.png" title="创建Kotlin的gradle工程">
 <p>与java一样，在src目录下创建一个package，创建一个.kt文件：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">fun <span class="title">main</span><span class="params">(args: Array&lt;String&gt;)</span> </span>&#123;</span><br><span class="line">    println(<span class="string">"Hello World"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>运行程序代码，结果就会输出“Hello World”，我们可以点击println这个方法，看一下它的源码：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** Prints the given message and newline to the standard output stream. */</span></span><br><span class="line"><span class="meta">@kotlin</span>.internal.InlineOnly</span><br><span class="line"><span class="function"><span class="keyword">public</span> actual inline fun <span class="title">println</span><span class="params">(message: Any?)</span> </span>&#123;</span><br><span class="line">    System.out.println(message)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">main</span><span class="params">(args: <span class="type">Array</span>&lt;<span class="type">String</span>&gt;)</span></span> &#123;</span><br><span class="line">    println(<span class="string">"Hello World"</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>运行程序代码，结果就会输出“Hello World”，我们可以点击println这个方法，看一下它的源码：<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** Prints the given message and newline to the standard output stream. */</span></span><br><span class="line"><span class="meta">@kotlin</span>.<span class="keyword">internal</span>.InlineOnly</span><br><span class="line"><span class="keyword">public</span> actual <span class="keyword">inline</span> <span class="function"><span class="keyword">fun</span> <span class="title">println</span><span class="params">(message: <span class="type">Any</span>?)</span></span> &#123;</span><br><span class="line">    System.<span class="keyword">out</span>.println(message)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>从源码中可以发现调用的就是java中的方法；</p>
 <p>那么，Kotlin的HelloWorld工程就编写完了，同时，我们对Kotlin也有了一个大概的认识，了解了Kotlin的一些特性，而这些特性极大方便了程序开发，具体的这些特性，会在后面详细讲的，还请继续关注我的博客！~~~</p>
 <p>最后，有一些学习Kotlin的参考资料，帮助我们更好的学习Kotlin：</p>
@@ -462,7 +458,7 @@
     
       <div>
         <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-  <div>免费分享，随意打赏 ^ ^</div>
+  <div>免费分享，随意打赏 ^_^</div>
   <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
     <span>打赏</span>
   </button>
@@ -776,6 +772,8 @@
   
 
 
+  
+
 
 
 
@@ -814,6 +812,11 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
